@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake and Cone Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="bg-pink-100 font-sans">
+  <header class="bg-pink-400 shadow-md sticky top-0 z-50 text-white">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#home" class="text-2xl font-bold">CAKE AND CONE SHOP</a>
+      <ul class="flex space-x-6 text-black font-medium">
+        <li><a href="#home" class="hover:text-pink-600">Home</a></li>
+        <li><a href="#products" class="hover:text-pink-600">Products</a></li>
+        <li><a href="#reviews" class="hover:text-pink-600">Reviews</a></li>
+        <li><a href="#contact" class="hover:text-pink-600">Contact</a></li>
+	<li>
+ 	    <a href="#cart" class="relative">
+    		🛒 <span id="cart-count" class="inline-block bg-red-500 text-white text-xs px-2 py-1 rounded-full absolute -top-2 -right-2">0</span></a>
+	</li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="min-h-screen bg-cover bg-center text-left flex items-center justify-center px-4" style="background-image: url('https://imgur.com/bnFMEMW.jpeg');">
+    <div class="max-w-2xl bg-white bg-opacity-70 p-8 rounded-lg shadow-lg">
+      <h2 class="text-4xl font-bold text-pink-700 mb-4">Welcome to CAKE AND CONE!</h2>
+      <p class="text-gray-800 mb-4 italic">
+        At our shop, we blend the joy of creamy ice cream with the delightful textures of freshly baked cakes...
+      </p>
+      <a href="#products" class="inline-block bg-gray-800 text-white px-6 py-2 rounded hover:bg-pink-700">Shop now!</a>
+    </div>
+  </section>
+
+  <section id="products" class="py-12 text-center">
+    <h3 class="text-3xl font-bold text-pink-700 mb-8">Featured Products</h3>
+    <div class="flex flex-wrap justify-center gap-8 px-4">
+      <div class="bg-white shadow-md rounded p-4 w-64">
+        <img src="https://i.imgur.com/xrd8B1G.jpg" alt="Mint Choco Ice" class="w-full h-40 object-cover rounded" />
+        <h5 class="mt-4 font-bold text-lg">Mint Choco Ice</h5>
+        <p class="text-gray-600">$19.99</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+      </div>
+
+      <div class="bg-white shadow-md rounded p-4 w-64">
+        <img src="https://imgur.com/HjTmNtz.jpg" alt="Coco Iceballs" class="w-full h-40 object-cover rounded" />
+        <h5 class="mt-4 font-bold text-lg">Coco Iceballs</h5>
+        <p class="text-gray-600">$29.99</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+      </div>
+
+      <div class="bg-white shadow-md rounded p-4 w-64">
+        <img src="https://imgur.com/uPPcu5S.jpg" alt="Blue Ice Cake" class="w-full h-40 object-cover rounded" />
+        <h5 class="mt-4 font-bold text-lg">Blue Ice Cake</h5>
+        <p class="text-gray-600">$39.99</p>
+        <button class="mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-12 bg-white text-center">
+    <h4 class="text-3xl font-bold text-pink-700 mb-8">Customer Reviews</h4>
+    <div class="space-y-6 max-w-2xl mx-auto">
+      <div>
+        <h2 class="font-bold">Jane Doe</h2>
+        <p>"Absolutely loved the cakes! They were delicious and beautifully decorated."</p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+      <div>
+        <h2 class="font-bold">John Smith</h2>
+        <p>"Great service and the ice cream was fantastic! Will definitely come back."</p>
+        <span>⭐⭐⭐⭐</span>
+      </div>
+      <div>
+        <h2 class="font-bold">Emily Johnson</h2>
+        <p>"The best dessert shop in town! Highly recommend the chocolate cake."</p>
+        <span>⭐⭐⭐⭐⭐</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-12 bg-pink-100">
+    <h6 class="text-3xl font-bold text-pink-700 mb-8 text-center">Contact Us</h6>
+    <form class="max-w-lg mx-auto bg-white p-8 rounded shadow" action="#" method="post">
+      <div class="mb-4">
+        <label for="name" class="block mb-2 font-semibold">Name:</label>
+        <input type="text" id="name" name="name" required class="w-full border px-4 py-2 rounded" />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block mb-2 font-semibold">Email:</label>
+        <input type="email" id="email" name="email" required class="w-full border px-4 py-2 rounded" />
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block mb-2 font-semibold">Message:</label>
+        <textarea id="message" name="message" rows="4" required class="w-full border px-4 py-2 rounded"></textarea>
+      </div>
+      <button type="submit" class="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="bg-pink-400 text-white text-center py-4 mt-8">
+    <p>&copy; 2025 Cake and Cone Shop. All rights reserved.</p>
+    <p>Facebook: C&C Shop | Instagram: C&C Shop | Email: cakeandcone@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
